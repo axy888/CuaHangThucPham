@@ -40,12 +40,12 @@ $("#formDangnhap").submit(function(event) {
         //chuyển đổi chuỗi JSON nhận được từ máy chủ thành một đối tượng JavaScript
         if (jsonResponse.status == 1) {
             alert("Đăng nhập thành công!");
-            window.location.href = "http://localhost/WebBanDoAn/index.php";
+            window.location.href = "../index.php";
             // Chuyển hướng đến trang chủ hoặc trang hồ sơ người dùng
         } 
         else if (jsonResponse.status == 2){
             alert("Đăng nhập thành công!");
-            window.location.href = "http://localhost/WebBanDoAn/admin/index.php";
+            window.location.href = "../admin/index.php";
         }
         else if((jsonResponse.status == 3))
         {
