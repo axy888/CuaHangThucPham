@@ -34,7 +34,7 @@
 
         <input type="hidden" name="ketqua" id="kqInput" value="">
         <input type="submit" onclick="dangky()" value="Đăng ký" id="btnDangky">
-        <a href="http://localhost/WebBanDoAn/index.php"> <input type="button" value="Hủy" id="btnHuy"></a>
+        <a href="../index.php"> <input type="button" value="Hủy" id="btnHuy"></a>
     </form>
     
 </div>
@@ -175,7 +175,7 @@ $("#formDangky").submit(function(event) {
             //chuyển đổi chuỗi JSON nhận được từ máy chủ thành một đối tượng JavaScript
             if (jsonResponse.status == 1) {
               alert("Đăng ký thành công!");
-            window.location.href = "http://localhost/WebBanDoAn/pages/dangnhap.php";
+            window.location.href = "dangnhap.php";
             // Chuyển hướng đến trang chủ hoặc trang hồ sơ người dùng
           } else {
             alert(jsonResponse.message);
