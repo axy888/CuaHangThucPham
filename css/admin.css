@@ -1,0 +1,531 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.left_side_admin
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    height: 100%;
+    background-color: #212529;
+}
+
+.left_side_admin ul
+{
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    width: 100%; 
+}
+
+.left_side_admin a
+{
+    display: block;
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    padding: 8px 0; /* Add padding for better spacing */
+    text-align: center; /* Center the text */
+    width: 100%;
+}
+
+.left_side_admin a i
+{
+    margin-right: 10px;
+}
+
+.left_side_admin li:hover
+{
+    background-color: black;
+}
+
+.left_side_admin img
+{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+/* product view  */
+.product_view
+{
+    display: flex;
+    justify-content: center;
+}
+
+.product_view_container
+{
+    margin-top: 30px;
+}
+
+.product_view_container table
+{
+    width: 1120px;
+    margin-left: 200px;
+}
+
+.product_view_container table tr
+{
+    text-align: center;
+}
+
+.product_view h2
+{
+    margin-left:200px;
+    margin-bottom: 20px;
+    background: linear-gradient(#e66465, #9198e5);
+    height: 80px;
+    padding-left: 30px;
+    padding-top: 18px;
+    color: whitesmoke;
+}
+
+/* Thêm sản phẩm */
+.category_add{
+    display: flex;
+    width: 150px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    background-color: grey;
+    margin-left: 200px;
+    
+}
+.category_add img{
+    width: 14px;
+}
+
+.category_add:hover
+{
+    background-color: #212529;
+}
+
+.addForm{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #DDDDDD;
+    /* top: 0%;
+    left: 0%; */
+    z-index: 1000;
+}
+.addForm h2{
+    background: none;
+    color: black;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.form_add,.form_update{
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 40%;
+    margin-left: 50%;
+    margin-top: 23%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 5%; */
+}
+
+.closeForm {
+
+    position: absolute; /* Định vị tuyệt đối */
+    float: middle;
+    padding: 10px 15px; /* Khoảng trống bên trong nút */
+    background-color: #ccc; /* Màu nền */
+    border: none; /* Bỏ đường viền */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua nút */
+    z-index: 1500;
+    width: 40px;
+    height: 40px;
+  }
+
+.closeForm:hover{
+background-color: red;
+color: white;
+}
+
+#close2{
+    top: 0%; /* Vị trí 10px từ cạnh trên */
+    right: 0%; /* Vị trí 10px từ cạnh phải */
+  }
+
+#form_addPro{
+    width: 500px;
+    height: 500px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#form_addPro select{
+    float: right;
+    margin-right: 10%;
+}
+
+#form_addPro textarea{
+float: right;
+margin-right: 10%;
+}
+
+.form_add label{
+    float: left;
+    margin-left: 10%;
+}
+.form_add .normal{
+    float: right;
+    margin-right: 10%;
+}
+
+#btnAddPro{
+    margin-top: 15%;
+    margin-left: 28%;
+    transform: translate(15%, -50%);
+}
+
+.btn_in_form{
+    height: 40px;
+    width: 140px;
+    background: none;
+    border-radius: 3px;
+    border: none;
+    background-color: #2d8226;
+    color: white;
+}
+.btn_in_form:hover{
+    background-color: white;
+    color: #2d8226;
+    border: 1px solid #2d8226;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Sửa sản phẩm */
+#form_updatePro{
+    width: 500px;
+    height: 570px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#form_updatePro select{
+    float: right;
+    margin-right: 10%;
+}
+
+#form_updatePro textarea{
+float: right;
+margin-right: 10%;
+width: 300px;
+height: 80px;
+}
+
+#btnUpdatePro{
+    margin-top: -10%;
+    margin-left:-5%;
+    transform: translate(15%, -50%);
+}
+
+.closeUpdateForm {
+
+position: absolute; /* Định vị tuyệt đối */
+float: right;
+padding: 10px 15px; /* Khoảng trống bên trong nút */
+background-color: #ccc; /* Màu nền */
+border: none; /* Bỏ đường viền */
+cursor: pointer; /* Hiển thị con trỏ chuột dạng tay khi di chuột qua nút */
+z-index: 1500;
+width: 40px;
+height: 40px;
+}
+
+.closeUpdateForm:hover{
+background-color: red;
+color: white;
+}
+
+/* Tìm kiếm và sắp xếp sản phẩm */
+.search-form
+{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.search-form input
+{
+    width: 270px;
+}
+
+.filter-container {
+    display: flex;
+    margin-right: 720px;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+/* Thêm sửa xóa thể loại */
+
+#form_addProCt{
+    width: 500px;
+    height: 250px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#btnAddProCt{
+    margin-top: 15%;
+    margin-left: -10%;
+    transform: translate(15%, -50%);
+}
+
+#form_updateProCt{
+    width: 500px;
+    height: 230px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#btnUpdateProCt{
+    margin-top: -10%;
+    margin-left:-5%;
+    transform: translate(15%, -50%);
+}
+
+.searchCategory
+{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.searchCategory input
+{
+    width: 270px;
+}
+
+/* Đơn hàng */
+.timdonhang
+{
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.timdonhang .trangthai
+{
+    margin-right: 20px;
+    margin-left: 7px;
+    margin-bottom: 20px;
+}
+
+.timdonhang button
+{
+    margin-left: 10px;
+}
+
+#tongtien_orderDetail
+{
+    margin-left: 1140px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn_xacnhan
+{
+    margin-left: 1140px;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 16px 16px;
+}
+
+/* Tìm kiếm và sắp xếp phiếu nhập */
+.searchImport
+{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+.searchImport input
+{
+    width: 180px;
+}
+
+/* Thêm phiếu nhập */
+#form_addProImp{
+    width: 500px;
+    height: 310px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+}
+
+#form_addProImp select{
+    /* float: right; */
+    margin-left: 5%;
+}
+
+#btnAddProImp{
+    margin-top: 5%;
+    transform: translate(0%, -50%);
+}
+
+
+/* Thêm chi tiết phiếu nhập */
+#form_addProImpDetail{
+    width: 500px;
+    height: 310px;
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#form_addProImpDetail select{
+    /* float: right; */
+    margin-left: 5%;
+    max-height: 50px;
+    overflow-y: auto;
+
+}
+
+#btnAddProImpDetail{
+    margin-top: 5%;
+    transform: translate(0%, -50%);
+    height: 50px;
+    width: 180px;
+}
+
+/* Sửa chi tiết phiếu nhập */
+#form_updateImportDetail{
+    padding: 0% 0% 3% 0%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#btnUpdateProCt{
+    margin-top: -10%;
+    margin-left:-5%;
+    transform: translate(15%, -50%);
+}
+
+.form_tt_CTPN
+{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+/* Tìm kiếm và sắp xếp tài khoản */
+.searchAccount
+{
+    margin-left: 200px;
+}
+
+.searchAccount #search
+{
+    width: 230px;
+}
+
+/* Thêm tài khoản */
+#form_addAccount
+{
+    border-radius: 10px;
+}
+
+#form_addAccount select
+{
+    margin-left: 150px
+}
+
+#btnAddProAccount{
+    margin-top: 5%;
+    transform: translate(150%, -50%);
+}
+
+/* Sửa tài khoản */
+#form_updateAccount{
+    /* padding: 0% 0% 3% 0%; */
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#form_updateAccount select{
+    float: right;
+    margin-right: 10%;
+}
+
+#form_updateAccount .trangthai{
+   margin-left: 10px;
+   width: 80px;
+}
+
+/* Tìm kiếm và sắp xếp người dùng */
+.searchUser
+{
+    margin-left: 200px;
+}
+
+.searchUser #search
+{
+    width: 230px;
+}
+
+/* Thêm nhà cung cấp */
+#form_addSup
+{
+    border-radius: 10px;
+}
+
+#form_addSup textarea
+{
+    float: right;
+    margin-right: 10%;
+}
+
+#btnAddSup{
+    margin-top: 10%;
+    transform: translate(150%, -50%);
+}
+
+/* Tìm kiếm nhà cung cấp */
+.searchSupplier
+{
+    margin-left: 200px;
+}
+
+.searchSupplier #search
+{
+    width: 270px;
+}
+
+/* Chi tiết phân quyền */
+#form_addPer
+{
+    border-radius: 10px;
+}
+
+#btnAddPer
+{
+    margin-top: 10%;
+    transform: translate(150%, -50%);
+}

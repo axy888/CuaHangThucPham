@@ -1,0 +1,14 @@
+//về tài khoản
+-tài khoản và mật khẩu admin là admin999
+-chỉ có admin mới có quyền quản lý tài khoản
+//về sản phẩm
+-các sản phẩm có mã loại từ 1 tới 4 thì tính theo kilogram
+-các sản phẩm hết hàng thì không thể mua
+//về đặt hàng
+-đơn hàng có các trạng thái là
+1:đang chờ xử lý
+2:đang giao
+3:đã giao
+4:đã hủy
+-khi mới đặt hàng thì sẽ là trạng thái 1 và người dùng vẫn có thể hủy hàng
+-khi hủy hàng sẽ chuyển sang trạng thái 4(vẫn lưu trong cơ sở dữ liệu)
