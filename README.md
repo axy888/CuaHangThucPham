@@ -5,13 +5,13 @@ An online website that helps you buy food and drinks. You can manage the website
 ## Description
 
 * User
-  * You can add/remove products to/from your cart, search and filter the products on website, proceed to checkout
-  * You can view order details, cancel orders, and edit your account information.
+  * You can **add/remove products** to/from your cart, **search and filter** the products on website, proceed to checkout
+  * You can **view order details**, cancel orders, and **edit** your account **information**.
   * If the product you buy is out of stock, you can not add it to your cart.
 * Admin
-  * You can create, edit, delete, search, and sort items such as products, orders, goods receipt,roles, accounts,...
-  * You can assign permissions to any accounts as you wish(except admin role).
-  * You can process user orders, and processed orders can no longer be canceled.
+  * You can **create, edit, delete, search, and sort items** such as **products, orders, goods receipt,roles, accounts**,...
+  * You can **assign permissions** to any accounts as you wish(except admin role).
+  * You can **process user orders**, and processed orders can no longer be canceled.
 
 ## Getting Started
 
@@ -19,9 +19,9 @@ An online website that helps you buy food and drinks. You can manage the website
 
 Install the sql file  ```sieuthi.sql``` in the folder ```database``` and add it to your database.
 
-The admin file is in the folder ```admin```.
+The **admin** file is in the folder ```admin```.
 
-The user file is in folder ```pages``` .
+The **user** file is in folder ```pages``` .
 
 ### Executing program
 
@@ -30,7 +30,7 @@ The user file is in folder ```pages``` .
 http://localhost/WebBanDoAn/index.php
 ```
 
-* WebBanDoAn is the name of the folder have entire code
+* **WebBanDoAn** is the name of the folder have entire code
 
 * After enter the website, you can create account, login and enjoy the web
 
@@ -42,4 +42,4 @@ Read the ```note.txt``` file if you don't understand something.
 
 ## Authors
 
-Tuan Dat - [TuanDat](https://github.com/matiassingers/awesome-readme)
+Tuan Dat - [TuanDat](https://github.com/axy888)
