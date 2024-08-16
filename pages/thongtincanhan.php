@@ -177,7 +177,7 @@ $("#formThongTinNguoiDung").submit(function(event) {
             console.log(jsonResponse);  
             if (jsonResponse.status==1) {
             alert("Sửa thông tin thành công!");
-            window.location.href = "http://localhost/WebBanDoAn/pages/sanpham.php";
+            window.location.href = "sanpham.php";
             // Chuyển hướng đến trang chủ hoặc trang hồ sơ người dùng
           } if(jsonResponse.status==0) alert("Sửa thông tin thất bại!");
           
@@ -199,7 +199,7 @@ $("#formThongTinNguoiDung").submit(function(event) {
                 var jsonResponse = JSON.parse(response);
                 if (jsonResponse.status==1) {
                     alert("Sửa mật khẩu thành công!");
-                    window.location.href = "http://localhost/WebBanDoAn/pages/sanpham.php";
+                    window.location.href = "sanpham.php";
             // Chuyển hướng đến trang chủ hoặc trang hồ sơ người dùng
           }     if(jsonResponse.status==0) alert("Sửa mật khẩu thất bại!");
         }
